@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Info from './components/Info.js'
+import About from './components/About.js'
 import { BrowserRouter, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -10,8 +10,8 @@ const RouterComponent = () => {
     return (
         <BrowserRouter>
             <div>
-                <Route exact path="/" render={() => <App />} />
-                <Route exact path="/info" render={() => <Info />} />
+                <Route exact path="/" render={() => <App color="black" />} />
+                <Route exact path="/about" render={() => <About />} />
             </div>
         </BrowserRouter>
     );

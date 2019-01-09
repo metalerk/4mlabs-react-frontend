@@ -1,7 +1,9 @@
-import React, { Fragment } from 'react';
-import './App.css';
-
-import GuessInfo from './helpers/GuessInfo.js'
+import React from 'react';
+import './styles/App.css'
+import Header from './components/Header'
+import GuessInfo from './helpers/GuessInfo'
+import Menu from './components/Menu'
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,9 +13,11 @@ class App extends React.Component {
   }
   render() { 
     return (
-      <Fragment>
-        <h1>Hello World!</h1>
-      </Fragment>
+    <div>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
     );
   }
 }
