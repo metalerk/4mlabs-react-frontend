@@ -10,7 +10,7 @@ class Menu extends React.Component {
         this.selectHandler = this.selectHandler.bind(this);
         this.changeLocation = this.changeLocation.bind(this);
         this.routes = {
-            home: '/',
+            home: '/#',
             about: '/about',
             resume: '/resume',
             contact: '/contact',
@@ -20,8 +20,7 @@ class Menu extends React.Component {
     selectHandler(event){
         this.setState({
             selectedOption: event.target.name,
-        },
-        () => console.log(this.state.selectedOption))
+        })
 
     }
 
