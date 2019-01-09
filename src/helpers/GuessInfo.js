@@ -18,7 +18,7 @@ const GuessInfo = () => {
         }
     }
     if (!window.sessionStorage.getItem('tracking')) {
-        fetch('http://0.0.0.0:8080/visitorinfo',
+        fetch('https://react-4mlabs-backend-tracker.herokuapp.com/visitorinfo',
         {
             method: 'POST',
             body: JSON.stringify(info),
