@@ -30,7 +30,7 @@ class Menu extends React.Component {
 
     render() { 
         return (
-            <section className="nes-container with-title is-centered">
+            <section className="nes-container with-title is-centered" style={this.props.style}>
                 <h2 className="title">Menu</h2>
                 <h3>Select an option:</h3>
                 <br />
@@ -40,15 +40,18 @@ class Menu extends React.Component {
                     <span>Home</span>
                     </label>
                     <br />
+                    <br />
                     <label>
                     <input type="radio" className="nes-radio" name="about" onChange={this.selectHandler} checked={this.state.selectedOption === "about"}/>
                     <span>About</span>
                     </label>
                     <br />
+                    <br />
                     <label>
                     <input type="radio" className="nes-radio" name="resume" onChange={this.selectHandler} checked={this.state.selectedOption === "resume"}/>
                     <span>Resume</span>
                     </label>
+                    <br />
                     <br />
                     <label>
                     <input type="radio" className="nes-radio" name="contact" onChange={this.selectHandler} checked={this.state.selectedOption === "contact"}/>
