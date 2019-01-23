@@ -1,7 +1,17 @@
 const GuessInfo = () => {
     let providers = ['ip-api', 'ipstack']
+    let dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        timeZoneName: 'short',
+    };
     let info = {
-        timestamp: new Date(),
+        timestamp: new Date().toLocaleDateString('es-MX', dateOptions),
         timezone: (new Date()).getTimezoneOffset()/60,
         referrer: document.referrer,
         platform: navigator.platform,
