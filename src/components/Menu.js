@@ -30,7 +30,7 @@ class Menu extends React.Component {
 
     render() { 
         return (
-            <section className="nes-container with-title is-centered" style={this.props.style}>
+            <section className="nes-container with-title is-dark is-centered" style={this.props.style}>
                 <h2 className="title">Menu</h2>
                 <h3>Select an option:</h3>
                 <br />
@@ -47,7 +47,7 @@ class Menu extends React.Component {
                     </label>
                     <br />
                     <br />
-                    <label>
+                    {/* <label>
                     <input type="radio" className="nes-radio" name="resume" onChange={this.selectHandler} checked={this.state.selectedOption === "resume"}/>
                     <span>Resume</span>
                     </label>
@@ -58,9 +58,10 @@ class Menu extends React.Component {
                     <span>Contact</span>
                     </label>
                     <br />
-                    <br />
-                    <button type="button" className="nes-btn is-primary" onClick={this.changeLocation}>Play!</button>
+                    <br /> */}
+                    <button type="button" className="nes-btn" onClick={this.changeLocation}>Play!</button>
                 </div>
+                <iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/75322351&color=%233e905c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </section>
         );
     }

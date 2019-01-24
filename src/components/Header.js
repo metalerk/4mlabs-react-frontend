@@ -6,7 +6,7 @@ const Header = (props) => {
         <header>
             <h1><i className="snes-jp-logo brand"></i>  Luis Esteban Rodríguez González</h1>
             <br />
-            <p className="role-title">Software Developer</p>
+            <p className="role-title">Software Developer / Softwareentwickler</p>
         </header>
     );
 }
