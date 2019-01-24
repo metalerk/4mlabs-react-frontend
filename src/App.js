@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Header from './components/Header'
 import GuessInfo from './helpers/GuessInfo'
 import Menu from './components/Menu'
-import Footer from './components/Footer';
 
 import './styles/App.css'
 import './styles/header.css'
@@ -16,13 +15,13 @@ let classes = {
       "margin-top": "5%",
       "margin-left": "auto",
       "margin-right": "auto",
-      "margin-bottom": "5%",
+      "margin-bottom": "10%",
   },
   menu: {
     "margin-top": "5%",
     "margin-left": "auto",
     "margin-right": "auto",
-    "margin-bottom": "5%",
+    "margin-bottom": "10%",
     width: "90%",
   },
   root: {
@@ -52,7 +51,6 @@ class App extends React.Component {
             <Menu style={classes.menu} />
           </Grid>
       </Grid>
-      <Footer />
     </div>
     );
   }

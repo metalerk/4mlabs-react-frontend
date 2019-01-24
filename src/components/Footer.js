@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/footer.css';
 
 const Footer = (props) => {
     return (
-        <footer className="footer">
+        <div className="footer">
             <h4>&copy; {new Date().toLocaleDateString('es-MX', { year: 'numeric' })} 4MLabs. All rights Reserved.</h4>
-        </footer>
+        </div>
     );
 }
  

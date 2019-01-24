@@ -5,6 +5,7 @@ import App from './App';
 import About from './components/About.js'
 import { BrowserRouter, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import Footer from './components/Footer';
 
 const RouterComponent = () => {
     return (
@@ -18,6 +19,7 @@ const RouterComponent = () => {
 }
 
 ReactDOM.render(<RouterComponent />, document.getElementById('root'));
+ReactDOM.render(<Footer />, document.getElementById('footer'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
