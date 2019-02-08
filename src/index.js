@@ -11,8 +11,9 @@ const RouterComponent = () => {
     return (
         <BrowserRouter>
             <div>
-                <Route exact path="/" render={() => <App color="black" />} />
-                <Route exact path="/about" render={() => <About />} />
+                <Route exact path="/" render={(props) => <App {...props} silent={false} />} />
+                <Route exact path="/silent" render={(props) => <App {...props} silent={true} />} />
+                <Route exact path="/about" component={About} />
             </div>
         </BrowserRouter>
     );

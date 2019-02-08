@@ -33,7 +33,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {  }
-    GuessInfo();
+    if (this.props.silent) {
+        window.sessionStorage.setItem('silent', true)
+    } else {
+      if(!window.sessionStorage.getItem('silent')){
+        GuessInfo();
+      }
+    }
   }
   render() { 
     return (
