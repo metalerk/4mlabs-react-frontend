@@ -1,5 +1,4 @@
 const GuessInfo = () => {
-    let providers = ['ip-api', 'ipstack']
     let dateOptions = {
         weekday: 'long',
         year: 'numeric',
@@ -23,12 +22,12 @@ const GuessInfo = () => {
             language: navigator.language,
         },
         location: {
-            provider: providers[1],
+            provider: 'ipstack',
             data: []
         }
     }
     if (!window.sessionStorage.getItem('tracking')) {
-        fetch('https://react-4mlabs-backend-tracker.herokuapp.com/visitorinfo',
+        fetch("https://react-4mlabs-backend-tracker.herokuapp.com/visitorinfo",
         {
             method: 'POST',
             body: JSON.stringify(info),
@@ -49,6 +48,7 @@ const GuessInfo = () => {
             return error;
         })
     }
+    return info
 }
 
 export default GuessInfo;

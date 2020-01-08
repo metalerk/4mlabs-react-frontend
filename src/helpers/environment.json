@@ -1,0 +1,10 @@
+{
+	"dev": {
+		"domain": "http://localhost:8080/",
+		"resource": "visitors"
+	},
+	"prod": {
+		"domain": "https://react-4mlabs-backend-tracker.herokuapp.com/",
+		"resource": "visitors"
+	}
+}
