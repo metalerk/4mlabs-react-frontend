@@ -38,7 +38,7 @@ class Menu extends React.Component {
         return (
             <section className="nes-container with-title is-dark is-centered" style={this.props.style}>
                 <h2 className="title">Menu</h2>
-                <h3>Select an option:</h3>
+                <h3>Kies een optie:</h3>
                 <br />
                 <div>
                     <label>
@@ -49,7 +49,7 @@ class Menu extends React.Component {
                     <br />
                     <label>
                     <input type="radio" className="nes-radio" name="about" onChange={this.selectHandler} checked={this.state.selectedOption === "about"}/>
-                    <span>About</span>
+                    <span>Over mij</span>
                     </label>
                     <br />
                     <br />
