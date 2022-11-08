@@ -60,45 +60,41 @@ class About extends React.Component {
                     <br />
                     <section className="nes-container with-title is-dark is-centered">
                         <h2 className="title">About me</h2>
-                        <p>My name is Luis Esteban.</p>
-                        <p>I have {this.getAge()} years old.</p>
-                        <p>I'm a software programmer and sometimes a musician.</p>
-                        <p>Currently I live in Guadalajara, México.</p>
-                        <p>My favorite programming language is Python because it is beautiful and very powerful.
-                            I'm also interested in languages like Erlang, Go, Rust, Elixir or F#.</p>
+                        <p>Name: Luis Esteban</p>
+                        <p>Age: {this.getAge()} years old</p>
+                        <p>Occupation: Software Developer / Musician</p>
+                        <p>Location: Kingdom of the Netherlands</p>
                     </section>
                     <br />
                     <section className="nes-container with-title is-dark is-centered">
                         <h2 className="title">Interests</h2>
-                        <p>I like to play videogames, I have a Xbox One and will have a PS4 soon, but retro ones are the best,
-                            that's why I set up Retropie in a Raspberry Pi 3 to enjoy titles like Super Mario, Metroid, Crash Team Racing and so on.</p>
-                        <p>I also play the guitar, my favorite one of my collection is a black Les Paul Standard.</p>
-                        <p>I like Rock, Metal (almost all flavours, my favorite is black and grind), EBM, Synthpop and Electronic.</p>
+                        <p>Travel </p>
+                        <p>🇲🇽🇳🇱🇩🇪🇧🇪🇮🇹🇻🇦🇨🇿🇸🇰🇦🇹🇷🇸🇭🇺</p>
+                        <p>Play the guitar. I record music on my spare time.</p>
+                        <p>Listen to music. Just started my own vinyl collection.</p>
+                        <p>Learn other languages. Currently learning Dutch and German.</p>
                     </section>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={1} xl={1}></Grid>
-                <Grid item xs={12} sm={12} md={12} lg={6} xl={6} style={classes.section}>
-                    <h2 style={classes.centered}>Deutsch</h2>
-                        <br />
-                        <section className="nes-container with-title is-dark is-centered">
-                            <h2 className="title">Über mich</h2>
-                            <p>Ich heiße Luis Esteban.</p>
-                            <p>Ich bin {this.getAge()} Jahre alt.</p>
-                            <p>Ich bin Softwareentwickler, manchmal Musiker.</p>
-                            <p>Zur Zeit wohne ich in Guadalajara, México.</p>
-                            <p>Meine Favorit Programmiersprache ist Python weil es schön und sehr kraftvoll ist.
-                                Übrigens, interessiere mich auch in Programmiersprachen wie Erlang, Go, Rust, Elixir und F#.
-                            </p>
-                        </section>
-                        <br />
-                        <section className="nes-container with-title is-dark is-centered">
-                            <h2 className="title">Interessen</h2>
-                            <p>Ich spiele gerne Videospiele, habe ich ein Xbox One und werde bald eine PS4 haben, aber Retro ist das Beste,
-                                deshalb, habe ich Retropie in einem Raspberry Pi eingerichtet, um Titel wie Super Mario, Metroid, Crash Team Racing, usw. zu genießen.
-                            </p>
-                            <p>Ich spiele auch Guitarre, mein Favorit aus meiner Sammlung ist ein schwarzer Les Paul Standard.</p>
-                            <p>Ich mag Rock, Metal (fast alle Subgenres, mein Favorit ist black und grind), EBM, Synthpop, Electronic, usw.</p>
-                        </section>
+                <Grid item xs={12} sm={12} md={12} lg={5} xl={6} style={classes.section}>
+                    <h2 style={classes.centered}>Nederlands</h2>
+                    <br />
+                    <section className="nes-container with-title is-dark is-centered">
+                        <h2 className="title">Over mij</h2>
+                        <p>Naam: Luis Esteban</p>
+                        <p>Leeftijd: {this.getAge()} jaar oud</p>
+                        <p>Bezigheid: Software ontwikkelaar / Muzikant</p>
+                        <p>Plaats: Koninkijk der Nederland</p>
+                    </section>
+                    <br />
+                    <section className="nes-container with-title is-dark is-centered">
+                        <h2 className="title">Interesses</h2>
+                        <p>Reizen </p>
+                        <p>🇲🇽🇳🇱🇩🇪🇧🇪🇮🇹🇻🇦🇨🇿🇸🇰🇦🇹🇷🇸🇭🇺</p>
+                        <p>Gitaarspelen. In mijn vrije tijd neem ik muziek op.</p>
+                        <p>Luisteren naar muziek. Net begonnen met mijn eigen vinylcollectie.</p>
+                        <p>Leer andere talen. Momenteel Nederlands en Duits aan het leren.</p>
+                    </section>
                 </Grid>
             </Grid>
             <br />
